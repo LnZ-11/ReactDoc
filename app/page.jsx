@@ -1,6 +1,6 @@
-import Header from "./components/header"
-import Body from "./components/body"
-import Sidebar from "./components/sidebar"
+import Header from "./src/header"
+import Body from "./src/cards"
+import Sidebar from "./src/sidebar"
 export default function Home(){
   return <main>
     <Header/>

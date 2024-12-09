@@ -1,7 +1,9 @@
+import { REACT_CARDS } from "./REACT_CARDS"
 import ReactSvg from "./ReactSvg";
 import Button from "./button";
 import {BookText, PlusCircle} from "lucide-react"
 import Link from "next/link";
+
 export default function Cards(props, isAllCategory) {
     return (
         <div className="flex flex-col gap-8 w-96 ml-4 mt-4 border-2 border-sky-500 drop-shadow-lg rounded-2xl p-4">

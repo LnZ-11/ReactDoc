@@ -1,5 +1,5 @@
 import { REACT_CARDS } from "./REACT_CARDS"
-import Body from "./body"
+import Cards from "./cards"
 export default function Sidebar(){
     const filter= [...new Set(REACT_CARDS.map((card) => card.category))]
     return(
@@ -10,5 +10,14 @@ export default function Sidebar(){
                     </div>
             ))}
             </div>
+    )
+}
+export function Body(props){
+    return(
+        <div className="flex flex-row flex-wrap justify-items-center space-x-4 space-y-4 mt-48">
+            {REACT_CARDS.filter((card) => card.category === props.category).map((card) => (
+                <Cards name={card.name} category={card.category} url={card.url} key={card.name} />
+            ))}
+        </div>
     )
 }
