@@ -10,6 +10,5 @@ export default function Home(){
         <Body />
     </div>
     </div>
-
   </main>
 }
