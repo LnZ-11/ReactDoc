@@ -30,7 +30,7 @@ export function Item(){
     return(
     <>
         {REACT_CARDS.filter((card) => !filter || card.category === filter).map((card) => (
-            <Cards name={card.name} category={card.category} url={card.url} key={card.name} />
+            <Cards name={card.name} category={card.category} url={card.url} hideCategory={filter===null ? true : false} key={card.name} />
         ))}
     </>
     )
